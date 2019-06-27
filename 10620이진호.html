@@ -3,16 +3,15 @@
 <head>
     <meta charset="utf-8">
     <title>10620이진호</title>
-   <link href="https://fonts.googleapis.com/css?family=Gamja+Flower&display=swap" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css?family=Cute+Font&display=swap" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css?family=Song+Myung&display=swap" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gamja+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cute+Font&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Song+Myung&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
     <style>
         html {
             scroll-behavior: smooth;
         }
-        
-        
+
         body {
             background-image: url("https://png.pngtree.com/thumb_back/fw800/back_pic/03/78/26/6657c12a6d975da.jpg");
             background-repeat: no-repeat;
@@ -23,9 +22,9 @@
             margin-left: 0px;
             margin-right: 0px;
         }
-        
-        nav :hover{
-           opacity: 1;
+
+        nav :hover {
+            opacity: 1;
             filter: alpha(opacity=100);
             color: antiquewhite;
         }
@@ -123,9 +122,14 @@
         .ddf :hover {
             color: darkslategray;
         }
-        .side{
+
+        .side {
             background-color: black;
             opacity: 0.4;
+            z-index: -10;
+        }
+        .upbar{
+            z-index: +10;
         }
     </style>
 </head>
@@ -137,14 +141,18 @@
     </header>
     <nav>
         <class class="headerbar">
+           <audio controls="" autoplay="" preload="auto"  style="height: 20px; position:absolute;right: 160px;width:15em;">
+                <source src="Avicii-3-Waiting%20For%20Love.mp3" type="audio/mp3">
+            </audio>
             <a href="#intro" class="hb" style="color: white"><strong id="bar">자기소개</strong></a> |
             <a href="#likes" class="hb" style="color: white"><strong id="bar">좋아하는 것</strong></a> |
             <a href="#hvbto" class="hb" style="color: white"><strong id="bar">해야할 것</strong></a> |
             <a href="#doing" class="hb" style="color: white"><strong id="bar">하고있는 것</strong></a> |
             <a href="#dontlike" class="hb" style="color: white"><strong id="bar">싫어하는 것</strong></a>
+            
         </class>
     </nav>
-    <div style="position: fixed;right: 10px;bottom:10%;opacity: 0.9">
+    <div style="position: fixed;right: 10px;bottom:10%;">
         <a href="#header">
             <img src="https://github.com/iyaho/html/blob/master/upicon.png?raw=true" alt="" width="90px" height="90px" class="upbar"></a>
     </div>
@@ -161,6 +169,7 @@
             이름 : 이진호<br>
             사는곳 : 서울시 구로구 오류동<br>
             생년월일 : 2003.08.08 <br>
+            혈액형 : A형 <br>
             띠 : 양띠<br>
             별자리 : 사자자리<br>
             동아리 : 도서부<br>
@@ -186,7 +195,7 @@
 
         </p>
 
-        <strong class="introd">
+        <strong class="introd" style="color: white;">
             게임:
             <img src="https://static.starcraft.com/images/content/share/share-1200x630-ca2d9035c74f9bb10faf142c83f76b47c909d6bbb177522676428d590c92ac16c99a92d1aea0afd4bbbd269e88b4341c4840d183d5555504f305c5a2a484469a.jpg" alt="브루드워" class="asomething">
             <img src="https://cdn.gamemeca.com/gmdata/0001/405/842/824284_kyh1104.01.jpg" alt="" class="asomething">
@@ -274,7 +283,7 @@
                 싫어하는 것
             </strong>
         </p>
-        <strong class="introd">
+        <strong class="introd" style="color: white">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS98gltbzR81y8pgfkpBAPXfUpLCq_M4f7H8qDSTllEhS65w9q8" alt="" class="asomething2">
             공부
             <img src="http://cdn.bizwatch.co.kr/news/photo/2018/04/10/8e2e11a3b7b3f29db983266ea37b519d163518.jpg" alt="" class="asomething2">
@@ -291,7 +300,8 @@
     <footer style="height: 20vh;background-color: dimgray;text-align: center;color: white;font-size: 30px;">
         <br>
         <p>
-            끝</p>
+            끝
+        </p>
     </footer>
 
 </body></html>
